@@ -263,6 +263,22 @@ code, pre {
     font-weight: bold;
 }
 
+#success-message {
+  display: none;
+  position: absolute;
+  bottom: 210px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: #d4edda;
+  
+  padding: 2px;
+  border-radius: 5px;
+}
+
+#users {
+    display: none;
+}
 
 /* Footer*/ 
 .footer .social a {

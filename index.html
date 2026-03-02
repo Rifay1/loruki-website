@@ -35,24 +35,36 @@
 
             <div class="showcase-form card">
                 <h2>Request a Demo</h2>
-                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                <form id="my-form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact">
                       <p class="hidden">
     <label>
       Don’t fill this out if you’re human: <input name="bot-field" type="text" />
     </label>
   </p>
+  <div class="msg"></div>
+  <p id="success-message" style="display:none;">
+                    ✅ Message envoyé !
+                </p>
                     <div class="form-control">
-                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="text" name="name" id="name" placeholder="Name" required>
                     </div>
                     <div class="form-control">
-                        <input type="text" name="company" placeholder="Company Name" required>
+                        <input type="text" name="phone" id="phone" placeholder="Phone" required>
                     </div>
                     <div class="form-control">
-                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
                     </div>
                     <input type="submit" value="Send" class="btn btn-primary">
                 </form>
+                
+                <ul id="users"></ul>
+
+                <!-- <ul class="items">
+            <li class="item">Item 1</li> 
+            <li class="item">Item 2</li> 
+            <li class="item">Item 3</li>
+        </ul>  -->
             </div>
         </div>
        </section>
@@ -172,5 +184,12 @@
             </div>
         </div>
      </footer>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+        emailjs.init("tkthe9o4ssiuQW7D_");
+        })();
+    </script>
 </body>
 </html>
