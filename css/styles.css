@@ -227,7 +227,9 @@ code, pre {
  .Services-main .card > i {
     margin-right: 20px;
 }
-
+.Services-main .card  {
+    justify-content: flex-start;
+}
 .Services-main .grid {
     padding: 30px;
 }
