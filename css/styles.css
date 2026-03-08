@@ -58,7 +58,7 @@ code, pre {
 
 /* Navbar */
 .navbar {
-    background-color: var(--primary-color);
+    background: linear-gradient(90deg,var(--primary-color), var(--dark-color));
     color: #fff;
     height: 70px;
 }
@@ -84,7 +84,7 @@ code, pre {
 /* Showcase */
 .showcase {
     height: 400px;
-    background-color: var(--primary-color);
+    background: linear-gradient(90deg, var(--primary-color), var(--dark-color));
     color: #fff;
     position: relative;
 }
@@ -154,6 +154,7 @@ code, pre {
 .stats {
     padding: 100px;
     animation: slideInFromBottom 1s ease-in;
+    
 }
 
 
@@ -173,7 +174,9 @@ code, pre {
 }
 
 /*Cli*/
-
+.cli {
+    background: linear-gradient(to bottom, #fff, var(--primary-color));
+}
 .cli .grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
@@ -185,12 +188,26 @@ code, pre {
 } */
 
 /*Cloud*/
-
+.cloud {
+    margin-top: 0;
+    margin-bottom: -35px;
+    background: linear-gradient(to top, var(--primary-color) 60%,var(--primary-color));
+    
+}
 .cloud .grid {
     grid-template-columns: 4fr 3fr;
 }
 
 /* Languages */
+.languages {
+    padding-top: 40px;
+    
+    background: linear-gradient(to top, white , var(--primary-color) 60%);
+}
+.languages h2 {
+    font-weight: bold;
+    color: #fff;
+}
 .languages .flex {
     flex-wrap: wrap;
 }
@@ -211,18 +228,28 @@ code, pre {
 /* Services */
 .Services-head {
     display: grid;
+    background: linear-gradient(to left, var(--dark-color), var(--primary-color));
 }
 .Services-head img, .Tarifs-head img  {
     width: 200px;
     justify-self: flex-end;
     
 }
-
+.Services-sub-head {
+    /* background: linear-gradient(to top, var(--light-color), var(--primary-color)); */
+     /* color: #fff;  */
+}
 .Services-sub-head img{
     width: 300px;
     justify-self: flex-end;
-
 }
+    
+    
+.Services-main {
+    background: linear-gradient(to bottom, var(--light-color), var(--dark-color));
+    margin: 0;
+}
+
 
  .Services-main .card > i {
     margin-right: 20px;
@@ -241,6 +268,13 @@ code, pre {
     grid-column: 1 / span 2 ;
 }
 /* Tarifs */
+.Tarifs-head {
+    background: linear-gradient(to right, var(--primary-color), var(--dark-color));
+}
+.Tarifs-main {
+    background: linear-gradient(to right, var(--primary-color), var(--dark-color));
+    margin: 0;
+}
 .Tarifs-main .card {
     margin: 50px 0;
 }
